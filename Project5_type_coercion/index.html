@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Type Coercion</title>
+</head>
+
+
+<body>
+    <script src="JS/main.js"></script>
+
+    <p id="Infinity" onclick="displayInfinity(this, 5e500);">Click me for infinity!</p>
+    <p id="NegInfinity" onclick="displayInfinity(this, -5e500);">Click me for negative infinity!!</p>
+
+    <p id="trueStatement" onclick="compareInt(this, 5, 4);">Is 5 > 4?</p>
+    <p id="falseStatement" onclick="compareInt(this, 4, 5);">Is 4 > 5?</p>
+
+    <p id="trueComparison" onclick="compareIntEqual(this, 10, 10);">Is 10 equal to 10?</p>
+    <p id="falseComparison" onclick="compareIntEqual(this, 9, 7);">Is 9 equal to 7?</p>
+
+    <p id="typeValueTrueComp" onclick="fullCompare(this, 10, 10);">Is 10 equal to 10? are they the same type?</p>
+    <p id="typeValueFalseComp1" onclick="fullCompare(this, 9, 'John');">Is 9 equal to "John"?</p>
+    <p id="typeValueFalseComp2" onclick="fullCompare(this, 9, '9');">Is 9 equal to "9"?</p>
+    <p id="typeValueFalseComp3" onclick="fullCompare(this, 9, 7);">Is 9 equal to 7?</p>
+
+    <p id="dualFalseComp" onclick="dualCompare(this, 9, 9, 3, 10);">Is 9 greater than 9, and is 3 less than 10?</p>
+    <p id="dualTrueComp" onclick="dualCompare(this, 9, 7, 3, 4);">Is 9 greater than 7, and is 3 less than 4?</p>
+
+    <p id="OrFalseComp" onclick="orCompare(this, 9, 9, 10, 3);">Is 9 greater than 9, or is 10 less than 3?</p>
+    <p id="OrTrueComp" onclick="orCompare(this, 9, 7, 3, 4);">Is 9 greater than 7, or is 3 less than 4?</p>
+
+    <p id="NotOpTrue" onclick="CompareNotTrue(this, 9, 7);">Is 9 not equal to 7?</p>
+    <p id="NotOpFalse" onclick="CompareNotTrue(this, 10, 10);">Is 9 not equal to 10?</p>
+
+</html>
