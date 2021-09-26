@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>String methods</title>
+</head>
+
+
+<body>
+    <script src="JS/main.js"></script>
+
+    <p id="displayValue" onclick="concatStrings(this)">Click me.</p><br>
+
+    <p id="slice" onclick="sliceString(this)">Click me to slice.</p><br>
+
+    <p id="makeUpper" onclick="makeUpper(this)">Click to make me uppercase.</p><br>
+
+    <p id="stringSearch">Use the textbox below to see if I contain any specific letters or words.</p>
+    <input type="text" id="searchQuery" placeholder="Search..." />
+    <button onclick="stringSearch('searchQuery', 'stringSearch', 'searchOutput')">Search</button>
+    <p id="searchOutput"></p><br>
+
+    <p id="precisionNumber" onclick="cutDown(this, 502712.2512, 6);">Click here to clean up this number: 502712.2512</p>
+
+    <p id="returnFixed" onclick="returnFixed(this, 512.1325);">Click here to clean up this number: 512.1325</p>
+    <p id="getValue" onclick="getValue(this);">Click here to return this text.</p>
+
+
+</html>
