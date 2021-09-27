@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown and slideshow</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+
+
+<body onload="AutoSlideShow()">
+
+
+    <p id="displayValue" onclick="concatStrings(this)">Set your alarm.</p><br>
+    <input id="seconds" value="" placeholder="Seconds..." />
+    <button onclick="countdown('seconds', 'timer')">Start timer</button>
+    <p id="timer"></p>
+
+
+
+    <div class="slideshow">
+
+
+        <div class="slides fade">
+
+            <img src="./Images/image_1.jpg" alt="Could not load image.">
+            <!-- couldn't really think of anything good for these -->
+            <!-- <div class="text">Beautiful creek</div> -->
+        </div>
+
+        <div class="slides fade">
+
+            <img src="./Images/image_2.jpg" alt="Could not load image.">
+            <!-- <div class="text">Mountain range</div> -->
+        </div>
+
+        <div class="slides fade">
+
+            <img src="./Images/image_3.jfif" alt="Could not load image.">
+            <!-- <div class="text">Forest</div> -->
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1, false)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, false)">&#10095;</a>
+    </div>
+    <br>
+
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
