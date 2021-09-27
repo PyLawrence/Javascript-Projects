@@ -31,6 +31,8 @@ function plusSlides(n, auto = true) {
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
+    // also need to stop auto function if we click a dot
+    slideShowAutomatic = false;
 }
 
 // pretty much word for word what is on the site
