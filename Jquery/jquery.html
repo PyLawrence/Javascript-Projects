@@ -7,6 +7,7 @@
 <script>
 
     $(document).ready(function () {
+        // write html on page load
         $("html").append(
             "<body>\
                 <div id='container'>\
@@ -19,10 +20,13 @@
                 </div>\
             </body>"
         );
+        // change font color
         $("#2").css({ "color": "red" });
+        // click event to hide the header
         $("#3").click(function () {
             $("h1").hide();
         });
+        // another way to do a click event, and animate hiding another paragraph.
         $("#1").on("click", function () {
             $("#2").fadeOut(200);
         });
